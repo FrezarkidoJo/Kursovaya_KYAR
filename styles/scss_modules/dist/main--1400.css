@@ -1,0 +1,12 @@
+@media (max-width: 1400px) {
+  .container {
+    max-width: 80px;
+  }
+
+  .header .container .header__logo {
+    margin-right: 80px;
+  }
+  .header .container .header__nav {
+    margin-right: 60px;
+  }
+}

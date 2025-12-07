@@ -1,0 +1,120 @@
+@use "mixins" as mix;
+@use "fonts";
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  .container{
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      .footer__nav {
+          @include mix.centers();
+          flex-direction: column;
+          gap: 12px;
+          .footer__nav-menu {
+              display: flex;
+              width: 100%;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              .footer__nav-item {
+                  position: relative;
+                  display: flex;
+                  height: 180px;
+                  justify-content: center;
+                  align-items: center;
+                  .footer__nav-icon {
+                      position: absolute;
+                      z-index: 1;
+                  }
+                  .footer__nav-link {
+                      @include mix.styletx(30px, 20px);
+                      display: flex;
+                      z-index: 2;
+                  }
+              }
+          }
+          .footer__line{
+              @include mix.centers();
+              .footer__line-image{
+                 width: 640px;
+                 height: 14px;
+              }
+          }
+      }
+      .footer__logo {
+          @include mix.centers();
+          flex-direction: column;
+          gap: 10px;
+          .footer__logo-text{
+              text-transform: uppercase;
+              font-family: Juli;
+              @include mix.styletx(20px, 20px);
+              letter-spacing: -0.05em;
+              min-width: 140px;
+          }
+      }
+      .footer__support {
+          width: max-content;
+          @include mix.centers();
+          flex-direction: column;
+          gap: 13px;
+          .footer__support-text {
+              @include mix.styletx(30px, 20px);
+              width: 160px;
+              text-transform: uppercase;
+          }
+          .footer__support-buttons {
+              display: flex;
+              justify-content: space-between;
+              min-width: 640px;
+              .footer__button{
+                  border: 2px solid rgba(255, 255, 255, 0.8);
+                  border-radius: 15px;
+                  @include mix.centers();
+              }
+              .footer__button--stream{
+                  width: 100%;
+                  max-width: 390px;
+                  gap: 5px;
+                  padding: 12px 0;
+                  .footer__text-stream{
+                      display: flex;
+                      width: 154px;
+                      @include mix.styletx(32px, 18px);
+                      letter-spacing: -0.05em;
+                  }
+                  a{
+                      display: flex;
+                      width: 202px;
+                      @include mix.styletx(32px, 18px);
+                      letter-spacing: -0.05em;
+                      text-transform: lowercase;
+                      color: #B491F5;
+                  }
+              }
+              .footer__button--donation{
+                  width: 100%;
+                  max-width: 224px;
+                  padding: 12px 0;
+                  gap: 10px;
+                  pre{
+                      text-align: center;
+                      width: 151px;
+                      letter-spacing: -0.05em;
+                      @include mix.styletx(32px, 18px);
+                  }
+              }
+          }
+          .footer__support-icons {
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+          }
+      }
+  }
+}

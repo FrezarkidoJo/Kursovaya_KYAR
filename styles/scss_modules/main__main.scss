@@ -1,0 +1,171 @@
+@use "mixins" as mix;
+@use "fonts";
+
+.layer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  will-change: transform;
+  pointer-events: none;
+}
+.layers__base{
+  transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  transition: transform .75s cubic-bezier(.055, .75, 0, 1.1);
+}
+.layers__middle{
+  transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+  transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+}
+.layers__front{
+  transform: translate3d(0, calc(var(--scrollTop) / 5), 0);
+  transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+}
+.layers__gradient{
+  z-index: -1;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 50%);
+}
+
+.main{
+  width: 100%;
+  padding-top: 150px;
+  position: relative;
+  z-index: -3;
+  background: rgb(161, 161, 161);
+  .container{
+    @include mix.centers();
+    flex-direction: column;
+    z-index: 100;
+    .content{
+      width: 100%;
+      max-width: 992px;
+      @include mix.centers();
+      flex-direction: column;
+      margin-bottom: 199px;
+      .content__title{
+        display: flex;
+        width: fit-content;
+        align-items: start;
+        padding-top: 82px;
+        margin-bottom: 73px;
+        >img{    
+          margin-right: -72px;
+        }
+        .text-line{
+          @include mix.centers();
+          flex-direction: column;
+          padding-top: 91px;
+          p{
+            text-align: start;
+            width: 700px;
+            @include mix.styletx(132px, 144px);
+            letter-spacing: -0.05em;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .content__buttons{
+        @include mix.centers();
+        gap: 51.5px;
+        margin-bottom: 64px;
+        .button--266{
+          @include mix.button(266px);
+        }
+        .content__slider-button{
+          @include mix.centers();
+          gap: 33.5px;
+          background: linear-gradient(90deg, rgba(80, 103, 25, 0.75) 0%, rgba(11, 113, 136, 0.75) 100%);
+          backdrop-filter: blur(50px);
+          width: 357px;
+          span{
+            text-transform: uppercase;
+            @include mix.styletx(56px, 20px);
+            letter-spacing: -0.05em;
+            text-align: center;
+          }
+          .right, .left{
+            font-size: 44px;
+            width: 31px;
+          }
+          .wheather{
+            width: 103px;
+          }
+        }
+      }
+      .content__window-blocks{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .block-out{
+          background: rgba(0, 0, 0, 0.1);
+          border: 3px solid #FFFFFF;
+          box-shadow: 6px 6px 4px 3px rgba(0, 0, 0, 0.05);
+          backdrop-filter: blur(12.5px);
+          border-radius: 16px;
+          @include mix.centers();
+        }
+        .content__trailer{
+          padding: 44.5px 86px;
+          flex-direction: column;
+          text-transform: uppercase;
+          gap: 15px;
+          h2{
+            @include mix.styletx(30px, 24px);
+            letter-spacing: 0.08em;
+            width: 234px;
+          }
+        }
+        .content__team-block{
+          padding: 33px 59px;
+          @include mix.centers();
+          flex-direction: column;
+          gap: 16px;
+          h2{
+            width: 170px;
+            text-transform: uppercase;
+            @include mix.styletx(40px, 24px);
+            letter-spacing: 0.07em;
+          }
+          .content__href-nav{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            div{
+              width: 288px;
+              display: flex;
+              justify-content: space-between;
+              p{
+                @include mix.styletx(24px, 24px);
+                letter-spacing: 0.07em;
+              }
+            }
+            div:nth-of-type(1){
+              p{
+                width: 247px;
+              }
+            }
+            div:nth-of-type(2){
+              p{
+                width: 245px;
+              }
+            }
+            div:nth-of-type(3){
+              p{
+                width: 243px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .content__large-line{
+      margin-bottom: 136px;
+      width: 1550px;
+      height: 56px;
+    }
+  }
+}

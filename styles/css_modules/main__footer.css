@@ -1,0 +1,141 @@
+@font-face {
+  font-family: AntiqReg;
+  src: url(../../fonts/InknutAntiqua-Regular.ttf);
+}
+@font-face {
+  font-family: Juli;
+  src: url(../../fonts/JuliusSansOne-Regular.ttf);
+}
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.footer .container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.footer .container .footer__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer .container .footer__nav .footer__nav-menu {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .container .footer__nav .footer__nav-menu .footer__nav-item {
+  position: relative;
+  display: flex;
+  height: 180px;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container .footer__nav .footer__nav-menu .footer__nav-item .footer__nav-icon {
+  position: absolute;
+  z-index: 1;
+}
+.footer .container .footer__nav .footer__nav-menu .footer__nav-item .footer__nav-link {
+  line-height: 30px;
+  font-size: 20px;
+  display: flex;
+  z-index: 2;
+}
+.footer .container .footer__nav .footer__line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container .footer__nav .footer__line .footer__line-image {
+  width: 640px;
+  height: 14px;
+}
+.footer .container .footer__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .container .footer__logo .footer__logo-text {
+  text-transform: uppercase;
+  font-family: Juli;
+  line-height: 20px;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  min-width: 140px;
+}
+.footer .container .footer__support {
+  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 13px;
+}
+.footer .container .footer__support .footer__support-text {
+  line-height: 30px;
+  font-size: 20px;
+  width: 160px;
+  text-transform: uppercase;
+}
+.footer .container .footer__support .footer__support-buttons {
+  display: flex;
+  justify-content: space-between;
+  min-width: 640px;
+}
+.footer .container .footer__support .footer__support-buttons .footer__button {
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .container .footer__support .footer__support-buttons .footer__button--stream {
+  width: 100%;
+  max-width: 390px;
+  gap: 5px;
+  padding: 12px 0;
+}
+.footer .container .footer__support .footer__support-buttons .footer__button--stream .footer__text-stream {
+  display: flex;
+  width: 154px;
+  line-height: 32px;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+}
+.footer .container .footer__support .footer__support-buttons .footer__button--stream a {
+  display: flex;
+  width: 202px;
+  line-height: 32px;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+  text-transform: lowercase;
+  color: #B491F5;
+}
+.footer .container .footer__support .footer__support-buttons .footer__button--donation {
+  width: 100%;
+  max-width: 224px;
+  padding: 12px 0;
+  gap: 10px;
+}
+.footer .container .footer__support .footer__support-buttons .footer__button--donation pre {
+  text-align: center;
+  width: 151px;
+  letter-spacing: -0.05em;
+  line-height: 32px;
+  font-size: 18px;
+}
+.footer .container .footer__support .footer__support-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}/*# sourceMappingURL=main__footer.css.map */

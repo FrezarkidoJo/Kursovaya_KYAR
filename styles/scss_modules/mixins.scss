@@ -1,0 +1,29 @@
+@mixin styletx($lh, $fs){
+  line-height: $lh;
+  font-size: $fs;
+}
+@mixin centers(){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin button($width: 180px) {
+  width: $width;
+  position: relative;
+  @include centers();
+  cursor: pointer;
+  background: none;
+  border: none;
+  .button-text {
+    text-transform: uppercase;
+    @include styletx(56px, 20px);
+    letter-spacing: -0.05em;
+    z-index: 2;
+  }
+  .button-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,176 @@
+@use "mixins" as mix;
+@use "fonts";
+
+.feedback{
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 50%), linear-gradient(0.26deg, #000000 6.66%, rgba(0, 0, 0, 0) 30.54%), url(../../images/BG3.png);
+  background-size: cover 100%;
+  padding-top: 300px;
+  background-repeat: no-repeat;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 523px;
+    .feedback__community{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      .feedback__mainTitle{
+        text-transform: uppercase;
+        @include mix.styletx(72px, 64px);
+        width: 470px;
+        letter-spacing: -0.05em;
+      }
+      .feedback__textAbout{
+        @include mix.styletx(32px, 18px);
+        width: 578px;
+        letter-spacing: -0.05em;
+        @include mix.centers();
+        padding: 20px 20px 20px 0px;
+        background: rgba(255, 255, 255, 0.01);
+        backdrop-filter: blur(25px);
+        border-radius: 30px;
+        color: rgba(255, 255, 255, 0.88);
+      }
+      .feedback__icons{
+        display: flex;
+        gap: 20px;
+        img{
+          width: 48px;
+          height: 48px;
+        }
+      }
+      .feedback__community-form{
+        display: flex;
+        justify-content: start;
+        gap: 15px;
+        flex-direction: column;
+        .feedback__newsletter{
+          display: flex;
+          gap: 8px;
+          align-items: center;
+          span{
+            @include mix.styletx(32px, 18px);
+            letter-spacing: -0.05em;
+            text-transform: uppercase;
+            width: 145px;
+          }
+          img{
+            width: 226px;
+            height: 16px;
+          }
+        }
+        .feedback__input{
+          @include mix.centers();
+          width: fit-content;
+          position: relative;
+          .feedback__input-mail::placeholder{
+            @include mix.styletx(32px, 18px);
+            letter-spacing: -0.05em;
+            opacity: 1;
+          }
+          .feedback__input-mail:focus-visible{
+            outline: none;
+            box-shadow: none;
+            border-color: transparent;
+          }
+          .feedback__input-mail{
+            @include mix.styletx(32px, 18px);
+            letter-spacing: -0.05em;
+            background: none;
+            border: none;
+            width: 380px;
+            height: 56px;
+            padding-left: 24px;
+            color: #FFFFFF;
+          }
+          img{
+            width: 380px;
+            height: 56px;
+            position: absolute;
+            pointer-events: none;
+          }
+        }
+        .feedback__communityButton{
+          @include mix.styletx(50px, 20px);
+          width: 250px;
+          letter-spacing: -0.05em;
+          background: rgba(255, 255, 255, 0.2);
+          border: 3px solid rgba(255, 255, 255, 0.8);
+          backdrop-filter: blur(5px);
+          border-radius: 15px;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .feedback__profile{
+      @include mix.centers();
+      gap: 32px;
+      padding: 44px;
+      background: rgba(255, 255, 255, 0.01);
+      border: 4px solid rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(25px);
+      border-radius: 30px;
+      height: 100%;
+      .feedback__typeIn{
+        @include mix.centers();
+        flex-direction: column;
+        .feedback__inputAndCaption{
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          margin-bottom: 20px;
+          p{
+            text-transform: uppercase;
+            @include mix.styletx(32px, 18px);
+            letter-spacing: -0.05em;
+          }
+          .feedback__input-profile{
+            @include mix.centers();
+            width: fit-content;
+            position: relative;
+            .feedback__input-text:focus-visible{
+              outline: none;
+              box-shadow: none;
+              border-color: transparent;
+            }
+            .feedback__input-text{
+              @include mix.styletx(32px, 18px);
+              letter-spacing: -0.05em;
+              background: none;
+              border: none;
+              width: 290px;
+              height: 56px;
+              padding-left: 24px;
+              color: #FFFFFF;
+            }
+            img{
+              width: 290px;
+              height: 56px;
+              position: absolute;
+              pointer-events: none;
+            }
+          }
+        }
+        .feedback__inputAndCaption:nth-child(3){
+          margin-bottom: 22px;
+        }
+        >img{
+          width: 290px;
+          height: 15px;
+          margin-bottom: 23px;
+        }
+        .button--290{
+          @include mix.button(290px);
+        }
+      }
+      >img{
+        width: 160px;
+        height: 456px;
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+@font-face {
+  font-family: AntiqReg;
+  src: url(../../fonts/InknutAntiqua-Regular.ttf);
+}
+@font-face {
+  font-family: Juli;
+  src: url(../../fonts/JuliusSansOne-Regular.ttf);
+}
+.feedback {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 50%), linear-gradient(0.26deg, #000000 6.66%, rgba(0, 0, 0, 0) 30.54%), url(../../images/BG3.png);
+  background-size: cover 100%;
+  padding-top: 300px;
+  background-repeat: no-repeat;
+}
+.feedback .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 523px;
+}
+.feedback .container .feedback__community {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.feedback .container .feedback__community .feedback__mainTitle {
+  text-transform: uppercase;
+  line-height: 72px;
+  font-size: 64px;
+  width: 470px;
+  letter-spacing: -0.05em;
+}
+.feedback .container .feedback__community .feedback__textAbout {
+  line-height: 32px;
+  font-size: 18px;
+  width: 578px;
+  letter-spacing: -0.05em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 20px 0px;
+  background: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(25px);
+  border-radius: 30px;
+  color: rgba(255, 255, 255, 0.88);
+}
+.feedback .container .feedback__community .feedback__icons {
+  display: flex;
+  gap: 20px;
+}
+.feedback .container .feedback__community .feedback__icons img {
+  width: 48px;
+  height: 48px;
+}
+.feedback .container .feedback__community .feedback__community-form {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  flex-direction: column;
+}
+.feedback .container .feedback__community .feedback__community-form .feedback__newsletter {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.feedback .container .feedback__community .feedback__community-form .feedback__newsletter span {
+  line-height: 32px;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  width: 145px;
+}
+.feedback .container .feedback__community .feedback__community-form .feedback__newsletter img {
+  width: 226px;
+  height: 16px;
+}
+.feedback .container .feedback__community .feedback__community-form .feedback__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  position: relative;
+}
+.feedback .container .feedback__community .feedback__community-form .feedback__input .feedback__input-mail::placeholder {
+  line-height: 32px;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+  opacity: 1;
+}
+.feedback .container .feedback__community .feedback__community-form .feedback__input .feedback__input-mail:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+.feedback .container .feedback__community .feedback__community-form .feedback__input .feedback__input-mail {
+  line-height: 32px;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+  background: none;
+  border: none;
+  width: 380px;
+  height: 56px;
+  padding-left: 24px;
+  color: #FFFFFF;
+}
+.feedback .container .feedback__community .feedback__community-form .feedback__input img {
+  width: 380px;
+  height: 56px;
+  position: absolute;
+  pointer-events: none;
+}
+.feedback .container .feedback__community .feedback__community-form .feedback__communityButton {
+  line-height: 50px;
+  font-size: 20px;
+  width: 250px;
+  letter-spacing: -0.05em;
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+.feedback .container .feedback__profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding: 44px;
+  background: rgba(255, 255, 255, 0.01);
+  border: 4px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(25px);
+  border-radius: 30px;
+  height: 100%;
+}
+.feedback .container .feedback__profile .feedback__typeIn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.feedback .container .feedback__profile .feedback__typeIn .feedback__inputAndCaption {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.feedback .container .feedback__profile .feedback__typeIn .feedback__inputAndCaption p {
+  text-transform: uppercase;
+  line-height: 32px;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+}
+.feedback .container .feedback__profile .feedback__typeIn .feedback__inputAndCaption .feedback__input-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  position: relative;
+}
+.feedback .container .feedback__profile .feedback__typeIn .feedback__inputAndCaption .feedback__input-profile .feedback__input-text:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+.feedback .container .feedback__profile .feedback__typeIn .feedback__inputAndCaption .feedback__input-profile .feedback__input-text {
+  line-height: 32px;
+  font-size: 18px;
+  letter-spacing: -0.05em;
+  background: none;
+  border: none;
+  width: 290px;
+  height: 56px;
+  padding-left: 24px;
+  color: #FFFFFF;
+}
+.feedback .container .feedback__profile .feedback__typeIn .feedback__inputAndCaption .feedback__input-profile img {
+  width: 290px;
+  height: 56px;
+  position: absolute;
+  pointer-events: none;
+}
+.feedback .container .feedback__profile .feedback__typeIn .feedback__inputAndCaption:nth-child(3) {
+  margin-bottom: 22px;
+}
+.feedback .container .feedback__profile .feedback__typeIn > img {
+  width: 290px;
+  height: 15px;
+  margin-bottom: 23px;
+}
+.feedback .container .feedback__profile .feedback__typeIn .button--290 {
+  width: 290px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.feedback .container .feedback__profile .feedback__typeIn .button--290 .button-text {
+  text-transform: uppercase;
+  line-height: 56px;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  z-index: 2;
+}
+.feedback .container .feedback__profile .feedback__typeIn .button--290 .button-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.feedback .container .feedback__profile > img {
+  width: 160px;
+  height: 456px;
+}/*# sourceMappingURL=main__feedback.css.map */

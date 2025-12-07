@@ -1,0 +1,53 @@
+@use "mixins" as mix;
+@use "fonts";
+
+.header {
+    @include mix.centers();
+    width: 100%;
+    .container{
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        .header__logo{
+            width: 82px;
+            height: 150px;
+            @include mix.centers();
+            margin-right: 168px;
+        }
+        .header__nav{
+            @include mix.centers();
+            margin-right: 140px;
+            .header__nav-list{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                width: 780px;
+                .header__nav-item{
+                    .header__nav-link{
+                        @include mix.styletx(30px, 20px);
+                    }
+                }
+            }
+        }
+        .button{
+          @include mix.button(180px);
+          margin-right: 78px;
+        }
+        .header__utils{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            .header__flag{
+                width: 64px;
+                @include mix.centers();
+            }
+            .header__mail{
+                width: 38px;
+                @include mix.centers();
+            }
+        }
+    }
+}

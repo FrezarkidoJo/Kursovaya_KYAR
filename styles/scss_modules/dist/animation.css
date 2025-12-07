@@ -1,0 +1,35 @@
+@keyframes k-light {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+@keyframes k-left-side {
+  0% {
+    transform: rotateY(-1deg) scaleX(0.92);
+  }
+  100% {
+    transform: rotateY(0deg) scaleX(1);
+  }
+}
+@keyframes k-right-side {
+  0% {
+    transform: rotateY(0deg) scaleX(1);
+  }
+  100% {
+    transform: rotateY(1deg) scaleX(0.92);
+  }
+}
+@keyframes k-bubbles {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

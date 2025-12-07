@@ -1,0 +1,87 @@
+@font-face {
+  font-family: AntiqReg;
+  src: url(../../fonts/InknutAntiqua-Regular.ttf);
+}
+@font-face {
+  font-family: Juli;
+  src: url(../../fonts/JuliusSansOne-Regular.ttf);
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.header .container {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.header .container .header__logo {
+  width: 82px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 168px;
+}
+.header .container .header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 140px;
+}
+.header .container .header__nav .header__nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  width: 780px;
+}
+.header .container .header__nav .header__nav-list .header__nav-item .header__nav-link {
+  line-height: 30px;
+  font-size: 20px;
+}
+.header .container .button {
+  width: 180px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-right: 78px;
+}
+.header .container .button .button-text {
+  text-transform: uppercase;
+  line-height: 56px;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  z-index: 2;
+}
+.header .container .button .button-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.header .container .header__utils {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.header .container .header__utils .header__flag {
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .container .header__utils .header__mail {
+  width: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=main__header.css.map */
