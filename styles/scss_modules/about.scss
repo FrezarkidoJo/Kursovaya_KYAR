@@ -82,7 +82,7 @@ a{
             @include centers();
             margin-right: 78px;
             cursor: pointer;
-            .header__button-text{
+            .header__button__text{
                 text-transform: uppercase;
                 @include styletx(56px, 20px);
                 letter-spacing: -0.05em;

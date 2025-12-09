@@ -200,14 +200,14 @@
   background: none;
   border: none;
 }
-.feedback .container .feedback__profile .feedback__typeIn .button--290 .button-text {
+.feedback .container .feedback__profile .feedback__typeIn .button--290 .button__text {
   text-transform: uppercase;
   line-height: 56px;
   font-size: 20px;
   letter-spacing: -0.05em;
   z-index: 2;
 }
-.feedback .container .feedback__profile .feedback__typeIn .button--290 .button-bg {
+.feedback .container .feedback__profile .feedback__typeIn .button--290 .button__bg {
   position: absolute;
   top: 0;
   left: 0;

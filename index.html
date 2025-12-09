@@ -32,8 +32,8 @@
                         </ul>
                     </nav>
                     <button class="button" type="button">
-                        <p class="button-text">play now</p>
-                        <img class="button-bg" src="SVG/head_button_bg.svg" alt="bg-button-head" width="180" height="56">
+                        <span class="button__text">play now</span>
+                        <img class="button__bg" src="SVG/head_button_bg.svg" alt="bg-button-head" width="180" height="56">
                     </button>
                     <div class="header__utils">
                         <div class="header__mail">
@@ -42,7 +42,7 @@
                                     <path opacity="0.95" fill-rule="evenodd" clip-rule="evenodd" d="M13.6268 15.3123L19.0038 18.6663L24.187 15.4041L35.8055 25.8613C35.499 25.9526 35.1747 25.9988 34.8327 26H3.1673C2.7493 26 2.3503 25.9255 1.9836 25.792L13.6268 15.3123ZM38 6.7184V23.1105C38 23.5387 37.8974 23.9443 37.715 24.31L26.3264 14.0591L38 6.7184ZM0 6.81027L11.4798 13.9724L0.2014 24.1263C0.0692793 23.8011 0.00110008 23.4573 0 23.1105L0 6.81027ZM34.8327 0C36.5807 0 38 1.29307 38 2.88947V3.9052L18.9962 15.8565L0 4.004V2.88947C0 1.2948 1.4174 0 3.1673 0H34.8327Z" fill="url(#paint0_linear_138_1240)"/>
                                     <defs>
                                     <linearGradient id="paint0_linear_138_1240" x1="25.146" y1="1.40716" x2="-0.131896" y2="25.8862" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="white"/>
+                                    <stop offset="0" stop-color="white"/>
                                     <stop offset="1" stop-color="#999999"/>
                                     </linearGradient>
                                     </defs>
@@ -77,17 +77,17 @@
                         </div>
                         <div class="content__buttons">
                             <button class="button button--266">
-                                <p class="button-text">game history</p>
-                                <img class="button-bg" src="SVG/main_history-buttonBg.svg" alt="historyBut" width="266" height="56">
+                                <span class="button__text">game history</span>
+                                <img class="button__bg" src="SVG/main_history-buttonBg.svg" alt="historyBut" width="266" height="56">
                             </button>
                             <div class="content__slider-button">
-                                <span class="left">&lt</span>
+                                <span class="left">&lt;</span>
                                 <span class="wheather">summer</span>
-                                <span class="right">&gt</span>
+                                <span class="right">&gt;</span>
                             </div>
                             <button class="button button--266">
-                                <p class="button-text">play titles</p>
-                                <img class="button-bg" src="SVG/main_play-titles-buttonBg.svg" alt="titlesBut" width="266" height="56">
+                                <span class="button__text">play titles</span>
+                                <img class="button__bg" src="SVG/main_play-titles-buttonBg.svg" alt="titlesBut" width="266" height="56">
                             </button>
                         </div>
                         <div class="content__window-blocks">
@@ -103,11 +103,11 @@
                                         <p>@ gymbros.corp</p>
                                     </div>
                                     <div>
-                                        <img src="SVG/main_arrow-href.svg" alt="arrow" width="24px" height="24px">
+                                        <img src="SVG/main_arrow-href.svg" alt="arrow">
                                         <p>gymmbross5.net</p>
                                     </div>
                                     <div>
-                                        <img src="SVG/main_arrow-href.svg" alt="arrow" width="24px" height="24px">
+                                        <img src="SVG/main_arrow-href.svg" alt="arrow">
                                         <p>gymbrosprod.by</p>
                                     </div>
                                 </div>
@@ -127,7 +127,7 @@
                     </div>
                     <div class="updates__cardContainer">
                         <img class="updates__backBubbles" src="images/bubbles.png" alt="bubbles">
-                        <img src="images/Connecting.png" alt="connecting" class="updates__connecting" width="944px" height="220px">
+                        <img src="images/Connecting.png" alt="connecting" class="updates__connecting">
                         <div class="updates__allCards">
                             <div class="card card--visible" onclick="myFunction()">
                                 <div class="card__forLeft" style="background-image: url(images/FirstCard.png);">
@@ -206,16 +206,16 @@
                         <p class="updates__textBanner">join us</p>
                         <p class="updates__textBanner">in <span>new</span> beta-version 0.9</p>
                         <button class="button button--252" type="button">
-                            <p class="button-text">play test</p>
-                            <img class="button-bg" src="SVG/bannerButton.svg" alt="bannerButton" width="252" height="56">
+                            <span class="button__text">play test</span>
+                            <img class="button__bg" src="SVG/bannerButton.svg" alt="bannerButton" width="252" height="56">
                         </button>
                     </div>
                     <div class="updates__events">
                         <p class="updates__event-text">other events</p>
-                        <img src="SVG/arrowEvents.svg" alt="arrow" width="64px" height="32px">
+                        <img src="SVG/arrowEvents.svg" alt="arrow">
                     </div>
                     <div class="content__large-line">
-                        <img src="SVG/main_bigLine.svg" alt="line" width="1550px" height="56px">
+                        <img src="SVG/main_bigLine.svg" alt="line">
                     </div>
                 </div>
             </section>
@@ -233,7 +233,7 @@
                             <img src="SVG/foot_insta.svg" alt="instagram">
                             <img src="SVG/foot_face.svg" alt="facebook">
                         </div>
-                        <form action="" class="feedback__community-form">
+                        <form class="feedback__community-form">
                             <div class="feedback__newsletter">
                                 <span>newsletter</span>
                                 <img src="SVG/feedback_newsletter.svg" alt="lineletter">
@@ -245,7 +245,7 @@
                             <button type="button" class="feedback__communityButton">sign up</button>
                         </form>
                     </div>
-                    <form action="" class="feedback__profile">
+                    <form class="feedback__profile">
                         <div class="feedback__typeIn">
                             <div class="feedback__inputAndCaption">
                                 <p>name:</p>
@@ -264,14 +264,14 @@
                             <div class="feedback__inputAndCaption">
                                 <p>telephone:</p>
                                 <div class="feedback__input-profile">
-                                    <img src="SVG/feedback_input-form.svg" alt="input" name="telephone" autocomplete="telephone">
+                                    <img src="SVG/feedback_input-form.svg" alt="input" id="telephone">
                                     <input type="tel" class="feedback__input-text">
                                 </div>
                             </div>
                             <img src="SVG/feedback_inputLine.svg" alt="line">
                             <button class="button button--290" type="button">
-                                <p class="button-text">send profile</p>
-                                <img class="button-bg" src="SVG/feedback_button.svg" alt="bg-button" width="290" height="56">
+                                <span class="button__text">send profile</span>
+                                <img class="button__bg" src="SVG/feedback_button.svg" alt="bg-button" width="290" height="56">
                             </button>
                         </div>
                         <img src="SVG/feedback_sword.svg" alt="sword">

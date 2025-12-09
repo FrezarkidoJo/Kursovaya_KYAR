@@ -138,6 +138,10 @@
               width: 288px;
               display: flex;
               justify-content: space-between;
+              img{
+                width: 24px;
+                height: 24px;
+              }
               p{
                 @include mix.styletx(24px, 24px);
                 letter-spacing: 0.07em;

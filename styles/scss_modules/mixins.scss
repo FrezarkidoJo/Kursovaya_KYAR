@@ -14,13 +14,13 @@
   cursor: pointer;
   background: none;
   border: none;
-  .button-text {
+  .button__text {
     text-transform: uppercase;
     @include styletx(56px, 20px);
     letter-spacing: -0.05em;
     z-index: 2;
   }
-  .button-bg {
+  .button__bg {
     position: absolute;
     top: 0;
     left: 0;

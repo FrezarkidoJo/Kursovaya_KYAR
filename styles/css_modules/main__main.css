@@ -104,14 +104,14 @@
   background: none;
   border: none;
 }
-.main .container .content .content__buttons .button--266 .button-text {
+.main .container .content .content__buttons .button--266 .button__text {
   text-transform: uppercase;
   line-height: 56px;
   font-size: 20px;
   letter-spacing: -0.05em;
   z-index: 2;
 }
-.main .container .content .content__buttons .button--266 .button-bg {
+.main .container .content .content__buttons .button--266 .button__bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -191,6 +191,10 @@
   width: 288px;
   display: flex;
   justify-content: space-between;
+}
+.main .container .content .content__window-blocks .content__team-block .content__href-nav div img {
+  width: 24px;
+  height: 24px;
 }
 .main .container .content .content__window-blocks .content__team-block .content__href-nav div p {
   line-height: 24px;

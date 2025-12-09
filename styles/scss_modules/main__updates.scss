@@ -88,6 +88,8 @@
 	      animation-direction: alternate;
       }
       .updates__connecting{
+          width: 944px;
+          height: 220px;
           position: absolute;
           top: 58px;
           z-index: -3;
@@ -266,6 +268,10 @@
       gap: 23px;
       @include mix.centers();
       margin-bottom: 112px;
+      img{
+        width: 64px;
+        height: 32px;
+      }
       .updates__event-text{
         @include mix.styletx(32px, 40px);
         letter-spacing: -0.05em;

@@ -124,11 +124,11 @@
             }
             .button{
                 width: 162px;
-                .button-text{
+                .button__text{
                     font-size: 18px;
                     line-height: 50px;
                 }
-                .button-bg{
+                .button__bg{
                     height: 50px;
                     width: 162px;
                 }
@@ -212,11 +212,11 @@
                 .content__buttons{
                     .button{
                         width: 200px;
-                        .button-text{
+                        .button__text{
                             font-size: 18px;
                             line-height: 42px;
                         }
-                        .button-bg{
+                        .button__bg{
                             height: 42px;
                             width: 200px;
                         }
@@ -299,11 +299,11 @@
                 }
                 .button{
                     width: 200px;
-                    .button-text{
+                    .button__text{
                         font-size: 18px;
                         line-height: 42px;
                     }
-                    .button-bg{
+                    .button__bg{
                         object-fit: cover;
                         height: 42px;
                         width: 200px;
@@ -562,11 +562,11 @@
             .button{
                 align-self: flex-end;
                 width: 120px;
-                .button-text{
+                .button__text{
                     font-size: 16px;
                     line-height: 40px;
                 }
-                .button-bg{
+                .button__bg{
                     object-fit: cover;
                     height: 40px;
                     width: 120px;
@@ -622,7 +622,7 @@
                 .content__buttons{
                     margin-bottom: 20px;
                     .button{
-                        .button-text{
+                        .button__text{
                             font-size: 16px;
                         }
                     }
@@ -772,7 +772,7 @@
                     margin-bottom: 8px;
                 }
                 .button{
-                    .button-text{
+                    .button__text{
                         font-size: 16px;
                         line-height: 42px;
                     }
@@ -889,11 +889,11 @@
                     }
                     .button{
                         width: 200px;
-                        .button-text{
+                        .button__text{
                             font-size: 16px;
                             line-height: 42px;
                         }
-                        .button-bg{
+                        .button__bg{
                             width: 200px;
                             height: 42px;
                         }

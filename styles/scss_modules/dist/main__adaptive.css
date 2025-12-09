@@ -108,11 +108,11 @@
   .header .container .button {
     width: 162px;
   }
-  .header .container .button .button-text {
+  .header .container .button .button__text {
     font-size: 18px;
     line-height: 50px;
   }
-  .header .container .button .button-bg {
+  .header .container .button .button__bg {
     height: 50px;
     width: 162px;
   }
@@ -165,11 +165,11 @@
   .main .container .content .content__buttons .button {
     width: 200px;
   }
-  .main .container .content .content__buttons .button .button-text {
+  .main .container .content .content__buttons .button .button__text {
     font-size: 18px;
     line-height: 42px;
   }
-  .main .container .content .content__buttons .button .button-bg {
+  .main .container .content .content__buttons .button .button__bg {
     height: 42px;
     width: 200px;
   }
@@ -238,11 +238,11 @@
   .updates .container .updates__banner .button {
     width: 200px;
   }
-  .updates .container .updates__banner .button .button-text {
+  .updates .container .updates__banner .button .button__text {
     font-size: 18px;
     line-height: 42px;
   }
-  .updates .container .updates__banner .button .button-bg {
+  .updates .container .updates__banner .button .button__bg {
     object-fit: cover;
     height: 42px;
     width: 200px;
@@ -468,11 +468,11 @@
     align-self: flex-end;
     width: 120px;
   }
-  .header .container .button .button-text {
+  .header .container .button .button__text {
     font-size: 16px;
     line-height: 40px;
   }
-  .header .container .button .button-bg {
+  .header .container .button .button__bg {
     object-fit: cover;
     height: 40px;
     width: 120px;
@@ -527,7 +527,7 @@
   .main .container .content .content__buttons {
     margin-bottom: 20px;
   }
-  .main .container .content .content__buttons .button .button-text {
+  .main .container .content .content__buttons .button .button__text {
     font-size: 16px;
   }
   .main .container .content .content__buttons .content__slider-button span {
@@ -657,7 +657,7 @@
   .updates .container .updates__banner .updates__textBanner + .updates__textBanner {
     margin-bottom: 8px;
   }
-  .updates .container .updates__banner .button .button-text {
+  .updates .container .updates__banner .button .button__text {
     font-size: 16px;
     line-height: 42px;
   }
@@ -768,11 +768,11 @@
   .feedback .container .feedback__profile .feedback__typeIn .button {
     width: 200px;
   }
-  .feedback .container .feedback__profile .feedback__typeIn .button .button-text {
+  .feedback .container .feedback__profile .feedback__typeIn .button .button__text {
     font-size: 16px;
     line-height: 42px;
   }
-  .feedback .container .feedback__profile .feedback__typeIn .button .button-bg {
+  .feedback .container .feedback__profile .feedback__typeIn .button .button__bg {
     width: 200px;
     height: 42px;
   }
