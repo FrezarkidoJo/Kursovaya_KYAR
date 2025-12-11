@@ -1,8 +1,10 @@
 @font-face {
   font-family: AntiqReg;
   src: url(../../fonts/InknutAntiqua-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: Juli;
   src: url(../../fonts/JuliusSansOne-Regular.ttf);
+  font-display: swap;
 }

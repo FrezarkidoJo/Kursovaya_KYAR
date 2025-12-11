@@ -300,7 +300,7 @@ a{
   width: 100%;
   position: relative;
   z-index: -1;
-  background: url(../../images/BG2Updates.png);
+  background: url(../../images/BG2Updates.webp);
   background-size: 100%;
   background-position: center 80%;
   .container::after{
@@ -310,7 +310,7 @@ a{
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url(../../images/light.png);
+    background-image: url(../../images/light.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 120px;
@@ -559,7 +559,7 @@ a{
   width: 100%;
   position: relative;
   z-index: -1;
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 50%), linear-gradient(0.26deg, #000000 6.66%, rgba(0, 0, 0, 0) 30.54%), url(../../images/BG3.png);
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 50%), linear-gradient(0.26deg, #000000 6.66%, rgba(0, 0, 0, 0) 30.54%), url(../../images/BG3.webp);
   background-size: 100%;
   background-position: center center;
   padding-top: 300px;

@@ -1,19 +1,22 @@
 @font-face {
   font-family: AntiqReg;
   src: url(../../fonts/InknutAntiqua-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: Juli;
   src: url(../../fonts/JuliusSansOne-Regular.ttf);
+  font-display: swap;
 }
 .feedback {
   width: 100%;
   position: relative;
   z-index: -1;
-  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 50%), linear-gradient(0.26deg, #000000 6.66%, rgba(0, 0, 0, 0) 30.54%), url(../../images/BG3.png);
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 50%), linear-gradient(0.26deg, #000000 6.66%, rgba(0, 0, 0, 0) 30.54%), url(../../images/BG3.webp);
+  background-position: center;
   background-size: cover 100%;
   padding-top: 300px;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 .feedback .container {
   display: flex;

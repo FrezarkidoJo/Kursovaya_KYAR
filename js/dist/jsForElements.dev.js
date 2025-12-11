@@ -2,10 +2,6 @@
 
 var _this = void 0;
 
-function myFunction() {
-  alert('hhd');
-}
-
 window.addEventListener('scroll', function (e) {
   document.documentElement.style.setProperty('--scrollTop', "".concat(_this.scrollY, "px"));
 });

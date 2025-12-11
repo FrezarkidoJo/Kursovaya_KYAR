@@ -1,7 +1,7 @@
 @use "mixins" as mix;
 @use "fonts";
 
-.layer{
+.main__layer{
   width: 100%;
   height: 100%;
   position: absolute;
@@ -59,7 +59,7 @@
           @include mix.centers();
           flex-direction: column;
           padding-top: 91px;
-          p{
+          h1{
             text-align: start;
             width: 700px;
             @include mix.styletx(132px, 144px);

@@ -143,7 +143,7 @@
   .main .container .content .content__title .text-line {
     padding-top: 60px;
   }
-  .main .container .content .content__title .text-line p {
+  .main .container .content .content__title .text-line h1 {
     font-size: 116px;
     width: 558px;
   }
@@ -237,7 +237,7 @@
   }
   .feedback {
     padding-top: 100px;
-    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 80%), linear-gradient(0.26deg, #000000 6.66%, rgba(0, 0, 0, 0) 60.54%), url(../../images/BG3.png);
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0) 80%), linear-gradient(0.26deg, #000000 6.66%, rgba(0, 0, 0, 0) 60.54%), url(../../images/BG3.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -320,7 +320,7 @@
     height: 228px;
     margin-right: -60px;
   }
-  .main .container .content .content__title .text-line p {
+  .main .container .content .content__title .text-line h1 {
     font-size: 98px;
     width: 472px;
     line-height: 108px;
@@ -495,7 +495,7 @@
   .main .container .content .content__title .text-line {
     padding-top: 40px;
   }
-  .main .container .content .content__title .text-line p {
+  .main .container .content .content__title .text-line h1 {
     font-size: 72px;
     line-height: 80px;
     width: 346px;
@@ -853,7 +853,7 @@
   .main .container .content .content__title .text-line {
     padding-top: 30px;
   }
-  .main .container .content .content__title .text-line p {
+  .main .container .content .content__title .text-line h1 {
     font-size: 46px;
     line-height: 50px;
     width: 226px;
