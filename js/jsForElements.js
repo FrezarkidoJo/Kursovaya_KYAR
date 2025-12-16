@@ -1,3 +1,7 @@
+function myFunction(){
+    alert("Проверка работоспособности.")
+}
+
 
 window.addEventListener('scroll', e => {
 	document.documentElement.style.setProperty('--scrollTop', `${this.scrollY}px`)

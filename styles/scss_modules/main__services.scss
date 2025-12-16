@@ -26,7 +26,10 @@ a{
   text-decoration: none;
   text-transform: uppercase;
   font-family: AntiqReg;
-  @include mix.centers();
+  transition: text-shadow 0.2s ease;
+}
+a:hover{
+  text-shadow: 0 0 4px white;
 }
 .container{
   max-width: 1550px;

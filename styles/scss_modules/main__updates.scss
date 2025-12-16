@@ -68,6 +68,7 @@
         background: rgba(0, 0, 0, 0.2);
         border: 3px solid rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(5px);
+        transition: background-color 0.2s ease;
         border-radius: 15px;
         span{
           text-transform: uppercase;
@@ -75,6 +76,13 @@
           letter-spacing: -0.05em;
           @include mix.centers();
           width: 98px;
+          transition: text-shadow 0.2s ease;
+        }
+        &:hover{
+           background: rgba(0, 0, 0, 0.4);
+           span{
+            text-shadow: 0 0 4px white;
+           }
         }
       }
       .updates__backBubbles{
@@ -111,6 +119,9 @@
           width: 200px;
           height: 330px;
           opacity: 0.4;
+          * {
+            pointer-events: none;
+          }
           div[class*="card__for"]{
             position: absolute;
             perspective: 150px;

@@ -105,6 +105,7 @@
   cursor: pointer;
   background: none;
   border: none;
+  transition: all 1s;
 }
 .main .container .content .content__buttons .button--266 .button__text {
   text-transform: uppercase;
@@ -112,12 +113,21 @@
   font-size: 20px;
   letter-spacing: -0.05em;
   z-index: 2;
+  transition: text-shadow 0.2s ease;
 }
 .main .container .content .content__buttons .button--266 .button__bg {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+.main .container .content .content__buttons .button--266:hover .button__bg {
+  transform: scale(1.05);
+}
+.main .container .content .content__buttons .button--266:hover .button__text {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
 }
 .main .container .content .content__buttons .content__slider-button {
   display: flex;
@@ -169,6 +179,13 @@
   letter-spacing: 0.08em;
   width: 234px;
 }
+.main .container .content .content__window-blocks .content__trailer img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.main .container .content .content__window-blocks .content__trailer img:hover {
+  transform: scale(1.05);
+}
 .main .container .content .content__window-blocks .content__team-block {
   padding: 33px 59px;
   display: flex;
@@ -195,8 +212,13 @@
   justify-content: space-between;
 }
 .main .container .content .content__window-blocks .content__team-block .content__href-nav div img {
+  cursor: pointer;
   width: 24px;
   height: 24px;
+  transition: filter 0.2s ease;
+}
+.main .container .content .content__window-blocks .content__team-block .content__href-nav div img:hover {
+  filter: drop-shadow(0px 0px 4px #ffffff);
 }
 .main .container .content .content__window-blocks .content__team-block .content__href-nav div p {
   line-height: 24px;

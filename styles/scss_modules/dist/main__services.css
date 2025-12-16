@@ -38,9 +38,11 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: AntiqReg;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: text-shadow 0.2s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 4px white;
 }
 
 .container {

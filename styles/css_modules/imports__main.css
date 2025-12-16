@@ -55,6 +55,7 @@
   cursor: pointer;
   background: none;
   border: none;
+  transition: all 1s;
   margin-right: 78px;
 }
 .header .container .button .button__text {
@@ -63,12 +64,21 @@
   font-size: 20px;
   letter-spacing: -0.05em;
   z-index: 2;
+  transition: text-shadow 0.2s ease;
 }
 .header .container .button .button__bg {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+.header .container .button:hover .button__bg {
+  transform: scale(1.05);
+}
+.header .container .button:hover .button__text {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
 }
 .header .container .header__utils {
   display: flex;
@@ -416,6 +426,7 @@
   cursor: pointer;
   background: none;
   border: none;
+  transition: all 1s;
 }
 .feedback .container .feedback__profile .feedback__typeIn .button--290 .button__text {
   text-transform: uppercase;
@@ -423,12 +434,21 @@
   font-size: 20px;
   letter-spacing: -0.05em;
   z-index: 2;
+  transition: text-shadow 0.2s ease;
 }
 .feedback .container .feedback__profile .feedback__typeIn .button--290 .button__bg {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+.feedback .container .feedback__profile .feedback__typeIn .button--290:hover .button__bg {
+  transform: scale(1.05);
+}
+.feedback .container .feedback__profile .feedback__typeIn .button--290:hover .button__text {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
 }
 .feedback .container .feedback__profile > img {
   width: 160px;
@@ -532,6 +552,7 @@
   cursor: pointer;
   background: none;
   border: none;
+  transition: all 1s;
 }
 .main .container .content .content__buttons .button--266 .button__text {
   text-transform: uppercase;
@@ -539,12 +560,21 @@
   font-size: 20px;
   letter-spacing: -0.05em;
   z-index: 2;
+  transition: text-shadow 0.2s ease;
 }
 .main .container .content .content__buttons .button--266 .button__bg {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+.main .container .content .content__buttons .button--266:hover .button__bg {
+  transform: scale(1.05);
+}
+.main .container .content .content__buttons .button--266:hover .button__text {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
 }
 .main .container .content .content__buttons .content__slider-button {
   display: flex;
@@ -596,6 +626,13 @@
   letter-spacing: 0.08em;
   width: 234px;
 }
+.main .container .content .content__window-blocks .content__trailer img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.main .container .content .content__window-blocks .content__trailer img:hover {
+  transform: scale(1.05);
+}
 .main .container .content .content__window-blocks .content__team-block {
   padding: 33px 59px;
   display: flex;
@@ -622,8 +659,13 @@
   justify-content: space-between;
 }
 .main .container .content .content__window-blocks .content__team-block .content__href-nav div img {
+  cursor: pointer;
   width: 24px;
   height: 24px;
+  transition: filter 0.2s ease;
+}
+.main .container .content .content__window-blocks .content__team-block .content__href-nav div img:hover {
+  filter: drop-shadow(0px 0px 4px #ffffff);
 }
 .main .container .content .content__window-blocks .content__team-block .content__href-nav div p {
   line-height: 24px;
@@ -726,6 +768,7 @@
   background: rgba(0, 0, 0, 0.2);
   border: 3px solid rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(5px);
+  transition: background-color 0.2s ease;
   border-radius: 15px;
 }
 .updates .container .updates__cardContainer .buttonBorder span {
@@ -737,6 +780,13 @@
   justify-content: center;
   align-items: center;
   width: 98px;
+  transition: text-shadow 0.2s ease;
+}
+.updates .container .updates__cardContainer .buttonBorder:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+.updates .container .updates__cardContainer .buttonBorder:hover span {
+  text-shadow: 0 0 4px white;
 }
 .updates .container .updates__cardContainer .updates__backBubbles {
   position: absolute;
@@ -773,6 +823,9 @@
   width: 200px;
   height: 330px;
   opacity: 0.4;
+}
+.updates .container .updates__cardContainer .updates__allCards .card * {
+  pointer-events: none;
 }
 .updates .container .updates__cardContainer .updates__allCards .card div[class*=card__for] {
   position: absolute;
@@ -936,6 +989,7 @@
   cursor: pointer;
   background: none;
   border: none;
+  transition: all 1s;
 }
 .updates .container .updates__banner .button--252 .button__text {
   text-transform: uppercase;
@@ -943,12 +997,21 @@
   font-size: 20px;
   letter-spacing: -0.05em;
   z-index: 2;
+  transition: text-shadow 0.2s ease;
 }
 .updates .container .updates__banner .button--252 .button__bg {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+.updates .container .updates__banner .button--252:hover .button__bg {
+  transform: scale(1.05);
+}
+.updates .container .updates__banner .button--252:hover .button__text {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
 }
 .updates .container .updates__events {
   gap: 23px;
@@ -1003,9 +1066,11 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-family: AntiqReg;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: text-shadow 0.2s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 4px white;
 }
 
 .container {

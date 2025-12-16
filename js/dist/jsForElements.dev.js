@@ -2,6 +2,10 @@
 
 var _this = void 0;
 
+function myFunction() {
+  alert("Проверка работоспособности.");
+}
+
 window.addEventListener('scroll', function (e) {
   document.documentElement.style.setProperty('--scrollTop', "".concat(_this.scrollY, "px"));
 });
