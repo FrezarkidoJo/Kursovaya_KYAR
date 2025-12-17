@@ -125,6 +125,10 @@
   backdrop-filter: blur(5px);
   border-radius: 15px;
   text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+.feedback .container .feedback__community .feedback__community-form .feedback__communityButton:hover {
+  background: rgba(0, 0, 0, 0.4);
 }
 .feedback .container .feedback__profile {
   display: flex;
@@ -202,6 +206,7 @@
   cursor: pointer;
   background: none;
   border: none;
+  transition: all 1s;
 }
 .feedback .container .feedback__profile .feedback__typeIn .button--290 .button__text {
   text-transform: uppercase;
@@ -209,12 +214,21 @@
   font-size: 20px;
   letter-spacing: -0.05em;
   z-index: 2;
+  transition: text-shadow 0.2s ease;
 }
 .feedback .container .feedback__profile .feedback__typeIn .button--290 .button__bg {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+.feedback .container .feedback__profile .feedback__typeIn .button--290:hover .button__bg {
+  transform: scale(1.05);
+}
+.feedback .container .feedback__profile .feedback__typeIn .button--290:hover .button__text {
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.7);
 }
 .feedback .container .feedback__profile > img {
   width: 160px;

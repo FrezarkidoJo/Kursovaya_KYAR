@@ -218,6 +218,8 @@
   max-width: 224px;
   padding: 12px 0;
   gap: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 .footer .container .footer__support .footer__support-buttons .footer__button--donation pre {
   text-align: center;
@@ -226,10 +228,20 @@
   line-height: 32px;
   font-size: 18px;
 }
+.footer .container .footer__support .footer__support-buttons .footer__button--donation:hover {
+  transform: scale(1.05);
+}
 .footer .container .footer__support .footer__support-icons {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+.footer .container .footer__support .footer__support-icons img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.footer .container .footer__support .footer__support-icons img:hover {
+  transform: scale(1.05);
 }
 
 .feedback {
@@ -349,6 +361,10 @@
   backdrop-filter: blur(5px);
   border-radius: 15px;
   text-transform: uppercase;
+  transition: background-color 0.2s ease;
+}
+.feedback .container .feedback__community .feedback__community-form .feedback__communityButton:hover {
+  background: rgba(0, 0, 0, 0.4);
 }
 .feedback .container .feedback__profile {
   display: flex;
