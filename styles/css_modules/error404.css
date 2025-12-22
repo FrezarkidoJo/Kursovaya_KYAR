@@ -1,4 +1,4 @@
-
+JuliJuli
 * {
 	margin: 0;
 	padding: 0;
@@ -11,20 +11,20 @@
 }
 
 @font-face {
-	font-family: kamerik-3d;
-	src: url(../fonts/kamerik205-heavy.woff2);
+	font-family: Inknut;
+	src: url(../../fonts/InknutAntiqua-Regular.ttf);
 	font-weight: 900;
 }
 
 @font-face {
-	font-family: merriweather-italic-3d;
-	src: url(../fonts/merriweather-regular-italic.woff2);
+	font-family: Juli;
+	src: url(../../fonts/JuliusSansOne-Regular.ttf);
 }
 
 body {
 	background-color: #000;
 	color: #fff;
-	font-family: kamerik-3d;
+	font-family: Inknut;
 	overflow-x: hidden;
 }
 
@@ -134,7 +134,7 @@ body {
 
 .hero-content__p {
 	text-transform: none;
-	font-family: merriweather-italic-3d;
+	font-family: Juli;
 	letter-spacing: normal;
 	font-size: clamp(14px, calc(var(--index) * 0.73), 24px);
 	line-height: 1.5;
@@ -175,7 +175,6 @@ body {
 	pointer-events: none;
 }
 
-/* Адаптация для планшетов */
 @media (max-width: 1024px) {
 	.layers__item {
 		inset: -3vw;
@@ -205,8 +204,7 @@ body {
 	.layers__item {
 		inset: -2vw;
 	}
-	
-	/* Уменьшаем параллакс эффект для мобильных */
+
 	.layer-1 {
 		transform: translateZ(-30px) scale(1.03);
 	}

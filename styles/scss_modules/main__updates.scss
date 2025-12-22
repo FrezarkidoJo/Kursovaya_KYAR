@@ -1,5 +1,6 @@
 @use "mixins" as mix;
 @use "fonts";
+@use "animation";
 
 .updates::after{
   content: '';
@@ -63,6 +64,7 @@
       flex-direction: column;
       margin-bottom: 168px;
       .buttonBorder{
+        cursor: pointer;
         @include mix.centers();
         padding: 0px 203px;
         background: rgba(0, 0, 0, 0.2);
@@ -232,7 +234,11 @@
         bottom: 184px;
         @include mix.centers();
         gap: 400px;
+        >div:hover{
+          transform: scale(1.05);
+        }
         >div{
+          transition: transform 0.2s ease;
           cursor: pointer;
           @include mix.centers();
           flex-direction: column;
@@ -243,7 +249,7 @@
           }
         }
         .updates__rightButtonSlide{
-          transform: scaleX(-1);
+          rotate: 180deg;
         }
       }
     }

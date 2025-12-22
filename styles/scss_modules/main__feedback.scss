@@ -98,6 +98,7 @@
         .feedback__communityButton{
           @include mix.styletx(50px, 20px);
           width: 250px;
+          cursor: pointer;
           letter-spacing: -0.05em;
           background: rgba(255, 255, 255, 0.2);
           border: 3px solid rgba(255, 255, 255, 0.8);

@@ -34,6 +34,10 @@
   justify-content: space-between;
   align-items: center;
 }
+.footer .container .footer__nav .footer__nav-menu .footer__nav-item:hover .footer__nav-icon {
+  --icon-color: rgb(255, 142, 37);
+  filter: drop-shadow(0 0 2px rgb(255, 255, 134));
+}
 .footer .container .footer__nav .footer__nav-menu .footer__nav-item {
   position: relative;
   display: flex;
@@ -44,6 +48,8 @@
 .footer .container .footer__nav .footer__nav-menu .footer__nav-item .footer__nav-icon {
   position: absolute;
   z-index: 1;
+  --icon-color: white;
+  transition: fill 0.2s ease, filter 0.5s ease;
 }
 .footer .container .footer__nav .footer__nav-menu .footer__nav-item .footer__nav-link {
   line-height: 30px;
